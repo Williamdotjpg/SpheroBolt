@@ -1,15 +1,14 @@
 // Programers: Cyle Krohling & William Holmes
-// Sphero Bolt ID:
+// Sphero Bolt ID:33DF
 //Date 5.4.2026
 //Program : Sandbox Training
 
 
 async function startProgram() {
-    await speak("Hello World", true);
-    setMainLed({ r: 0, g: 0, b: 255 });
-    setSpeed(60);
-    await delay(2);
+    await speak("goodbye world", true);
+    setMainLed({ r: 200, g: 0, b: 255 });
+    setSpeed(70);
+    await delay(3);
     setSpeed(0);
 
 }
-
