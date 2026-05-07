@@ -13,6 +13,7 @@
 
 }
 */
+/*
 async function startProgram() {
 
     setMainLed({ r: 0, g: 0, b: 255 });
@@ -32,5 +33,14 @@ async function startProgram() {
         await delay(1);
 
     }
+*/
 
+async function startProgram() {
+
+    await roll(0,50,2)
+    await spin(360, 1);
+    if (getLocation().x = 50){
+        await roll(0,-50,2)
+        await speak("Moooooooo"), true
+    }
 }
