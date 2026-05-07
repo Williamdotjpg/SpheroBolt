@@ -38,9 +38,21 @@ async function startProgram() {
 async function startProgram() {
 
     await roll(0,50,2)
-    await spin(360, 1);
     if (getLocation().x = 50){
         await roll(0,-50,2)
         await speak("Moooooooo"), true
+    
     }
+    if (getLocation().x = -50){
+        await spin(360, 1);
+        await roll(0,100,2)
+        await roll(-20,50,2)
+    }
+    if (getLocation().y = 0){
+        await spin(360, 1);
+    }
+    else {
+    await speak('Cyle is crazy')
+   	 }
+	}
 }
