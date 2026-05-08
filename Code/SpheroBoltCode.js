@@ -52,7 +52,16 @@ async function startProgram() {
         await spin(360, 1);
     }
     else {
-    await speak('Cyle is crazy')
-   	 }
-	}
-}
+        for (var _i1 = 0; _i1 < 8; _i1++) {
+
+             await strobe({ r: 255, g: 57, b: 66 }, 1, 5)
+             setMainLed({ r: 90, g: 255, b: 90 })
+             await speak('Natilie is crazy')
+
+            }
+
+        }
+    }
+
+
+    
