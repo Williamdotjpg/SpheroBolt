@@ -15,4 +15,10 @@ async function startProgram() {
         await setMainLed({ r: 0, g: 255, b: 0 });
         await delay(5)
     }
+    await roll(180,30,2)
+    await roll(210,40,2)
+    if (getLocation().x = 70){
+        await Sound.Effects.Fireworks.play(false);
+        await delay(5)
+    }
 }
