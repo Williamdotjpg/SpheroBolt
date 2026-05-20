@@ -78,4 +78,6 @@ async function startProgram() {
         await setMainLed({ r: 0, g: 0, b: 255 });
         await delay(5)
     }
+    await roll (105, 20, 2) 
+    await setMainLed({ r: 255, g: 92, b: 5 });
 }
