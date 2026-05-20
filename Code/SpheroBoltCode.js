@@ -3,6 +3,7 @@
 //Date 5.4.2026
 //Program : Maze Comp
 
+
 registerMatrixAnimation({
     frames: [
         [
@@ -55,7 +56,7 @@ async function startProgram() {
         await setMainLed({ r: 200, g: 0, b: 255 });
         await delay(5)
     }
-    await roll(90, 42, 2)
+    await roll(90, 46, 2)
     if (getLocation().x = 70) {
         await setMainLed({ r: 0, g: 255, b: 0 });
         await delay(5)
@@ -69,4 +70,12 @@ async function startProgram() {
     await roll(90, 14, 2)
     await roll(45, 28, 2)
     playMatrixAnimation(0, true);
+    await delay(5)
+    playMatrixAnimation(0, false);
+    await roll(120,10,2)
+    await roll(190,20,2)
+    if (getLocation().y = 20){
+        await setMainLed({ r: 0, g: 0, b: 255 });
+        await delay(5)
+    }
 }
