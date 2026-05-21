@@ -88,5 +88,7 @@ async function startProgram() {
     if (getLocation().y = 20) {
         await spin(360,2)
         await delay(5)
-    }
+      } 
+    await roll(300, 38, 2) 
+    await Sound.Effects.Laser.play(false);
 }
