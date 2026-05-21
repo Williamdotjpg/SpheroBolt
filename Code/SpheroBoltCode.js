@@ -4,6 +4,9 @@
 //Program : Maze Comp
 
 
+
+
+
 registerMatrixAnimation({
     frames: [
         [
@@ -62,13 +65,13 @@ async function startProgram() {
         await delay(5)
     }
     await roll(180, 30, 2)
-    await roll(210, 28, 2)
+    await roll(220, 28, 2)
     if (getLocation().x = 70) {
         await Sound.Effects.Fireworks.play(false);
         await delay(5)
     }
     await roll(90, 14, 2)
-    await roll(45, 28, 2)
+    await roll(45, 23, 2)
     playMatrixAnimation(0, true);
     await delay(5)
     playMatrixAnimation(0, false);
@@ -80,4 +83,10 @@ async function startProgram() {
     }
     await roll (105, 20, 2) 
     await setMainLed({ r: 255, g: 92, b: 5 });
+    await delay(5)
+    await roll(35,25,2)
+    if (getLocation().y = 20) {
+        await spin(360,2)
+        await delay(5)
+    }
 }
