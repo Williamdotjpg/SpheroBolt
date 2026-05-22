@@ -91,4 +91,11 @@ async function startProgram() {
       } 
     await roll(300, 38, 2) 
     await Sound.Effects.Laser.play(false);
+    await delay(5)
+    await roll(5,40,2 )
+    await roll(-90,5,1)
+    await roll(-180, 5, 1)
+    await roll(-180, 5, 1)
+    await roll(-180, 5, 1)
+    await setMainLed({ r: 0, g: 255, b: 0 });
 }
